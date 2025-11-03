@@ -51,7 +51,9 @@ const helpControl = async (req, res) => {
         // console.log(req.body);
         res.status(200).json({ success: true, message: "Emails sent to all users!" });
     } catch (err) {
-        res.status(500).json({ success: false, error: err.message });
+        console.error("Email sending failed:", err);
+          res.status(500).json({ success: false, error: err.message });
+        // res.status(500).json({ success: false, error: err.message });
     }
 
 }
