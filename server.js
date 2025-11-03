@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 // app.use(cors());
 
-const allowedOrigins = ['https://rescueus.onrender.com'];
+const allowedOrigins = ['http://localhost:5173','https://rescueus.onrender.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
