@@ -47,8 +47,8 @@ const helpControl = async (req, res) => {
             Mobile
         })
 
-        console.log(addHelp,users);
-        console.log(req.body);
+        // console.log(addHelp,users);
+        // console.log(req.body);
         res.status(200).json({ success: true, message: "Emails sent to all users!" });
     } catch (err) {
         res.status(500).json({ success: false, error: err.message });
